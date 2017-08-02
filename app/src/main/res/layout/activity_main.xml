@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xianwei.scorekeeper.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:textAllCaps="true"
+                android:textColor="@color/red"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/team_one_set_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:text="2"
+                android:textColor="@color/red"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/team_one_score_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/team_one_set_view"
+                android:text="10"
+                android:textColor="@color/red"
+                android:textSize="100sp" />
+
+            <Button
+                android:id="@+id/team_one_plus_btn"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/team_one_score_view"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/plus" />
+
+            <Button
+                android:id="@+id/team_one_minus_btn"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/team_one_plus_btn"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/minus" />
+
+            <Button
+                android:id="@+id/team_one_set_plus"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/team_one_score_view"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/plus" />
+
+            <Button
+                android:id="@+id/team_one_set_minus"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/team_one_set_plus"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/minus" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/guest"
+                android:textAllCaps="true"
+                android:textColor="@color/green"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/team_two_set_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="2"
+                android:textColor="@color/green"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/team_two_score_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/team_two_set_view"
+                android:text="10"
+                android:textColor="@color/green"
+                android:textSize="100sp" />
+
+            <Button
+                android:id="@+id/team_two_plus_btn"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/team_two_score_view"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/plus" />
+
+            <Button
+                android:id="@+id/team_two_minus_btn"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/team_two_plus_btn"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/minus" />
+
+            <Button
+                android:id="@+id/team_two_set_plus"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/team_two_score_view"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/plus" />
+
+            <Button
+                android:id="@+id/team_two_set_minus"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/team_two_set_plus"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/minus" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"
+        android:layout_marginBottom="15dp"
+        android:text="@string/reset" />
+
+
+</RelativeLayout>
